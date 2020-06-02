@@ -8,7 +8,7 @@ dockerpath=dikaeinstein/ml-service
 
 # Step 2
 # Run the Docker Hub container with kubernetes
-kubectl run ml-service --image=$dockerpath
+kubectl apply -f kube/deployment.yml
 
 # Step 3:
 # List kubernetes pods
@@ -16,4 +16,4 @@ kubectl get pods
 
 # Step 4:
 # Forward the container port to a host
-kubectl port-forward ml-service 8000:80
+kubectl port-forward deployment/ml-service 8000:80
