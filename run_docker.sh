@@ -4,7 +4,7 @@
 
 # Step 1:
 # Build image and add a descriptive tag
-docker build -t ml-service .
+docker build -t dikaeinstein/ml-service .
 
 # Step 2:
 # List docker images
@@ -12,4 +12,4 @@ docker images
 
 # Step 3:
 # Run flask app
-docker run -p 8000:80 ml-service
+docker run -p 8000:80 dikaeinstein/ml-service

@@ -5,7 +5,7 @@
 
 # Step 1:
 # Create dockerpath
-dockerpath=ml-service
+dockerpath=dikaeinstein/ml-service
 
 # Step 2:
 # Authenticate & tag
