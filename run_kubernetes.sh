@@ -4,11 +4,11 @@
 
 # Step 1:
 # This is your Docker ID/path
-dockerpath=dikaeinstein
+dockerpath=ml-service
 
 # Step 2
 # Run the Docker Hub container with kubernetes
-kubectl run ml-service --image=ml-service --image-pull-policy=Never --port=8000
+kubectl run ml-service --image=$dockerpath
 
 # Step 3:
 # List kubernetes pods

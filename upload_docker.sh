@@ -5,7 +5,7 @@
 
 # Step 1:
 # Create dockerpath
-dockerpath=dikaeinstein
+dockerpath=ml-service
 
 # Step 2:
 # Authenticate & tag
@@ -13,4 +13,4 @@ echo "Docker ID and Image: $dockerpath"
 
 # Step 3:
 # Push image to a docker repository
-docker push $dockerpath/ml-service
+docker push $dockerpath
